@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title> Web программирование</title>
+	<link href="css/style.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Java, Csharp">
+  <script>
+    var start = Date.now();
+    function loader() {
+            answer.textContent = 'Page load: ' + (Date.now() - start) + 'ms'
+        }
+        window.addEventListener("load", loader);
+  </script>
+  <script>
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
+            document.getElementById("Btn").style.display = "block";
+        } else {
+            document.getElementById("Btn").style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+</head>
+<body >
+	<header class="title">
+		<nav class="nav" id = "navId">
+			<a class="nav__link" href="index.html">Что такое Java?</a>
+			<a class="nav__link" href="Charp.html">Что такое C#?</a>
+			<a class="nav__link" href="JavaVsCsharp.html">C# против Java: "Hello world"</a>
+		</nav>
+		<h1 >
+		Сайт разработчика
+		</h1>
+	</header>
+  <script>
+		var Nav = document.querySelectorAll('#navId a');
+		var p = window.location.href;
+		for (let page of Nav){
+			if (p == page.href){
+				page.classList.add("pageActive")
+			}
+		}
+	</script>
+  <button onclick="topFunction()" id="Btn" title="Go to top">
+		<p ><img class="a__content" src="images/picture5.png" alt="Искусственный интеллект"></p>
+	</button>
+  <main>
+    <p class="advertising"><img class="advertising__content" src="images/picture4.jpg" alt="Искусственный интеллект"></p>
+    <section id=JavaVsCsharp class="javaVsCsharp">
+      <div class="javaVsCsharp__content">
+        <h3>C# против Java: "Hello world" </h3>
+        <p class="text">C# vs Java – какой из общецелевых, объектно-ориентированных языков программирования лучше всего подойдет вам для работы? Они оба имеют обширные библиотеки, которые можно использовать для создания приложений для ПК, веб, мобильных устройств и других платформ. У обоих есть большие сообщества восторженных поклонников и много онлайн-поддержки.</p>
+        <dl>
+          <dt>
+            Java "Hello, World!" Program:
+          </dt>
+          <dd>
+            <pre><code>
+class HelloWorld {
+public static void main(String[] args) {
+      System.out.println("Hello, World!"); 
+    }
+}
+            </code></pre>
+          </dd>
+        </dl>
+        <dl>
+          <dt>
+            C# "Hello World"  Program:
+          </dt>
+          <dd>
+            <pre>
+              <code>
+namespace HelloWorld
+{
+class Hello {         
+  static void Main(string[] args)
+  {
+      System.Console.WriteLine("Hello World!");
+  }
+}
+}
+</code>
+            </pre>
+          </dd>
+        </dl>
+    </div>
+    <div class="table">
+      <div class="table__title">Зарплата программистов</div>
+      <div class="table__language">Язык</div>
+      <div class="table__Java">Java</div>
+      <div class="table__C">C#</div>
+      <div class="table__practice0">Начинающий программист, руб.</div>
+      <div class="table__practiceLot">Программист с опытом работы, руб.</div>
+      <div class="table__content1">50000</div>
+      <div class="table__content2">160000</div>
+      <div class="table__content2">60000</div>
+      <div class="table__content1">180000</div>
+  </div>
+    </section>
+    <article class="story">
+      <div class="story__content">
+        <h3>Как я решила стать программистом.</h3>
+        <p class="text">
+          <b>Программирование меня с детства привлекало.</b> Казалось, это интересное и перспективное направление. После десятого  класса я  решила поступать в технический вуз.  Родители сначала были против, потому что я год готовилась к экзаменам  по биологии, химии. Но мы пришли к компромиссу, и они доверились моему решению. 
+        </p>
+        <p class="text">
+          <b>Я начала заниматься с репетитором по математике и информатике.</b> Он помог мне подготовиться к олимпиадам и ЕГЭ. В итоге я выиграла олимпиаду по математике и информатики. И написала ЕГЭ на 75+. 
+        </p>
+        <p class="text">
+          <b>Я поступила в ИТМО на факультет «Информационные системы и технологии».</b> И начала подробно изучать языки программирования.
+        </p>
+      </div>
+      <p class="story__avatar"><img class="story__avatar_content" src="images/picture3.jpg" alt="История" width="100" height="100"></p>
+      <aside class="formula">
+        <h4>Моя Формула успеха</h4>
+        <p class="text">
+          Хорошее настроение<sup>2</sup> + Терпение<sup>2</sup> - Лень<sup>100</sup> = Программист
+        </p>
+      </aside>
+      <aside class="story__quote">
+        <h4>Цитата</h4>
+        <p class="story__text">
+          <cite>Андерс Хейлсберг</cite>-<q>Не бывает хороших языков, бывают хорошие программисты</q>.
+        </p>
+      </aside>
+    </article>
+  </main>
+  <footer class="finality">
+		<h4 class="finality__contactInfo">Контактная информация:</h4>
+			<ul class="finality__data">
+				<li>Беззубцева Анастасия Андреевна</li>
+				<li><a class="finality__data_link" href="tel: 89198741592">8-919-874-15-92</li>
+				<li><a class="finality__data_link"  href="mailto:adkam02@mail.ru ">adkam02@mail.ru</a></li>
+			</ul>
+      <div id="answer"></div>
+	</footer>
+</body>
+</html>
