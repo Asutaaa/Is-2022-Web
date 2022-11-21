@@ -31,9 +31,9 @@
 <body >
 	<header class="title">
 		<nav class="nav" id = "navId">
-			<a class="nav__link" href="/">Что такое Java?</a>
-			<a class="nav__link" href="/Charp.html">Что такое C#?</a>
-			<a class="nav__link" href="/JavaVsCsharp.html">C# против Java: "Hello world"</a>
+			<a class="nav__link" href="index.html">Что такое Java?</a>
+			<a class="nav__link" href="Charp.html">Что такое C#?</a>
+			<a class="nav__link" href="JavaVsCsharp.html">C# против Java: "Hello world"</a>
 		</nav>
 		<h1 >
 		Сайт разработчика
@@ -43,7 +43,7 @@
     var Nav = document.querySelectorAll('#navId a');
     var p = window.location.pathname;
     for (let page of Nav){
-      if (p == page.getAttribute('href')){
+      if (p == '/' + page.getAttribute('href')){
         page.classList.add("pageActive")
       }
     }
