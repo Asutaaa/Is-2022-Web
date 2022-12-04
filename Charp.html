@@ -5,29 +5,9 @@
 	<link href="css/style.css" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="keywords" content="Java, Csharp">
-  <script>
-    var start = Date.now();
-    function loader() {
-            answer.textContent = 'Page load: ' + (Date.now() - start) + 'ms'
-        }
-        window.addEventListener("load", loader);
-  </script>
-  <script>
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-        if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
-            document.getElementById("Btn").style.display = "block";
-        } else {
-            document.getElementById("Btn").style.display = "none";
-        }
-    }
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-    </script>
 </head>
+<script src="js/loader.js"></script>
+<script src="js/FScroll.js"></script>
 <body >
 	<header class="title">
 		<nav class="nav" id = "navId">
@@ -39,15 +19,7 @@
 		Сайт разработчика
 		</h1>
 	</header>
-  <script>
-		var Nav = document.querySelectorAll('#navId a');
-		var p = window.location.href;
-		for (let page of Nav){
-			if (p == page.href){
-				page.classList.add("pageActive")
-			}
-		}
-	</script>
+  <script src="js/page.js"></script>
 	<button onclick="topFunction()" id="Btn" title="Go to top">
 		<p ><img class="a__content" src="images/picture5.png" alt="Искусственный интеллект"></p>
 	</button>
