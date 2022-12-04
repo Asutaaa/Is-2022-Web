@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<title> Web программирование</title>
+	<link href="css/style.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Java, Csharp">
+</head>
+<script src="js/loader.js"></script>
+<script src="js/FScroll.js"></script>
+<body >
+	<header class="title">
+		<nav class="nav" id = "navId">
+			<a class="nav__link" href="index.html">Что такое Java?</a>
+			<a class="nav__link" href="Charp.html">Что такое C#?</a>
+			<a class="nav__link" href="JavaVsCsharp.html">C# против Java: "Hello world"</a>
+      <a class="nav__link" href="myTodoList.html">Todo List</a>
+		</nav>
+		<h1 >
+		Сайт разработчика
+		</h1>
+	</header>
+	<script src="js/page.js"></script>
+	<button onclick="topFunction()" id="Btn" title="Go to top">
+		<p ><img class="a__content" src="images/picture5.png" alt="Искусственный интеллект"></p>
+	</button>
+    <main>
+      <section class="todoList">
+			  <form class="text" name="studyplan" id="studyplan">
+          <label>
+            <span class="input-title"> Ваше имя </span>
+            <input id="name" class="input" type="text" name="name" placeholder="Иван Иванов">
+          </label>
+          <label>
+            <span class="input-title"> Количество месяцев </span>
+            <select name="day" required>
+              <option value="1" selected>Один месяц</option>
+              <option value="2">Два месяца</option>
+              <option value="3">Три месяца</option>
+            </select>
+          </label>
+          <label>
+            <span class="input-title"> Язык программирования </span>
+            <select name="language" required>
+              <option value="Charp" selected>С#</option>
+              <option value="Java">Java</option>
+            </select>
+          </label>
+          <button class="button_orange" type="submit">Создать план обучения</button>
+        </form>
+    </section>
+    <script src="js/table.js"></script>
+    <script src="js/btn.js"></script>
+    </main>
+
+	<footer class="finality">
+		<h4 class="finality__contactInfo">Контактная информация:</h4>
+			<ul class="finality__data">
+				<li>Беззубцева Анастасия Андреевна</li>
+				<li><a class="finality__data_link" href="tel: 89198741592">8-919-874-15-92</li>
+				<li><a class="finality__data_link"  href="mailto:adkam02@mail.ru ">adkam02@mail.ru</a></li>
+			</ul>
+			<div id="answer"></div>
+	</footer>
+</body>
+</html>
