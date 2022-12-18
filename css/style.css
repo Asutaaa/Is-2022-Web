@@ -256,11 +256,13 @@ label{
   margin-right: 55px;
   font-size: 24px;
 }
-.todoList{
+._todoList{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #F2F2F4;
+	min-height: 50em;
+}
+.todoList{
 	min-height: 50em;
 }
 #studyplan{
@@ -332,4 +334,49 @@ select{
   color: #cccccc;
   background: #151514;
 }
-
+.plan__name_title{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.plan_add_form_no{
+	display: none;
+}
+.plan_add_form_yes{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	height: 100%;
+	opacity: 0.9;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	top: 0;
+	left: 0;
+}
+#add_plan{
+	border: 1px solid black;
+	border-radius: 6px;
+	padding: 10px 15px;
+	background-color: white;
+	color: black;
+	font-size: inherit;
+	appearance: none;
+}
+#add_plan_context{
+	display: block;
+	min-width: 210px;
+	border: 2px solid transparent;
+	border-radius: 6px;
+	margin-left: auto;
+	padding: 9px 15px;
+	color: #000000;
+	font-size: 18px;
+	font-weight: 300;
+	opacity: 0.9;
+	background-color: #FFBB3D;
+}
+#promt_input{
+	display: flex;
+}
