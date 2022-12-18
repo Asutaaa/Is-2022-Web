@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<title> Web программирование</title>
+	<link href="css/style.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Java, Csharp">
+  <script src="js/loader.js"></script>
+</head>
+<script src="js/FScroll.js"></script>
+<body >
+	<header class="title">
+		<nav class="nav" id = "navId">
+			<a class="nav__link" href="index.html">Что такое Java?</a>
+			<a class="nav__link" href="Charp.html">Что такое C#?</a>
+			<a class="nav__link" href="JavaVsCsharp.html">C# против Java: "Hello world"</a>
+      <a class="nav__link" href="myTodoList.html">Todo List</a>
+		</nav>
+		<h1 >
+		Сайт разработчика
+		</h1>
+	</header>
+	<script src="js/page.js"></script>
+	<button onclick="topFunction()" id="Btn" title="Go to top">
+		<p ><img class="a__content" src="images/picture5.png" alt="Искусственный интеллект"></p>
+	</button>
+    <main>
+      <div class="hello"></div>
+      <section class="_todoList">
+			  <form class="text" name="studyplan" id="studyplan">
+          <label>
+            <span class="input-title"> Ваше имя </span>
+            <input id="name" class="input" type="text" name="name" placeholder="Иван Иванов">
+          </label>
+          <label>
+            <span class="input-title"> Количество месяцев </span>
+            <select name="day" required>
+              <option value="1" selected>Один месяц</option>
+              <option value="2">Два месяца</option>
+              <option value="3">Три месяца</option>
+            </select>
+          </label>
+          <label>
+            <span class="input-title"> Язык программирования </span>
+            <select name="language" required>
+              <option value="Charp" selected>С#</option>
+              <option value="Java">Java</option>
+            </select>
+          </label>
+          <button class="button_orange" type="submit">Создать план обучения</button>
+        </form>
+    </section>
+    <template id="mounth">
+      <div class = "plan__name">
+        <div class ="plan__name_title">
+        <p class ="plan__name_title_content"></p>
+        <button class="btn__add">+</button>
+      </div>
+      </div>  
+    </template>
+    <template id = "plan_add">
+      <div id="add__form" class="plan_add_form_no">
+        <form id="promt_input" name="promt_input" class="promt_input_class">
+          <input id="add_plan"  type="text" name="add_plan" placeholder="Ещё одна задача">
+          <button id="add_plan_context" type="submit">
+            Добавить задачу
+          </button>
+        </form>
+      </div>
+    </template>
+    <template id="plan_template">
+      <div class = "plan__allContent">
+        <p class = "plan__content"></p>
+        <button class="btn__delete">-</button>
+      </div>
+    </template>
+    <script src="js/table.js"></script>
+    <script src="js/btn.js"></script>
+    </main>
+
+	<footer class="finality">
+		<h4 class="finality__contactInfo">Контактная информация:</h4>
+			<ul class="finality__data">
+				<li>Беззубцева Анастасия Андреевна</li>
+				<li><a class="finality__data_link" href="tel: 89198741592">8-919-874-15-92</li>
+				<li><a class="finality__data_link"  href="mailto:adkam02@mail.ru ">adkam02@mail.ru</a></li>
+			</ul>
+			<div id="answer"></div>
+	</footer>
+</body>
+</html>
