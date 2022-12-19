@@ -23,7 +23,7 @@ async function req(data){
     document.querySelector('.Articles__table').appendChild(newNode);
   });
   try{
-    let rjson = await respId.json();
+    var rjson = await respId.json();
   }
   catch{
     setTimeout(function(){document.querySelector('#spinner').className = 'spinnerNo';}, 500);
@@ -31,6 +31,7 @@ async function req(data){
   }
   if(respId.ok){
     try{
+      console.log("+")
       let userId = rjson[0].id;
       await fetch('https://jsonplaceholder.typicode.com/posts?userId=' + userId).then(response => response.json()).then(json => construct(json));
     }
