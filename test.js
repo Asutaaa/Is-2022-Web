@@ -17,8 +17,18 @@ function construct(data){
 async function req(data){
   let wrap = document.querySelector('.Articles__table');
   wrap.innerHTML = '';
-  let respId = await fetch('https://jsonplaceholder.typicode.com/users?username=' + data.get('form__input'));
-  let rjson = await respId.json();
+  let respId = await fetch('https://jsonplaceholder.typicode.com/users?username=' + data.get('form__input')).catch(function(){
+    let newNode = document.importNode(Articles__templateErrorOne.content, true);
+    newNode.textContent = 'Подключение к интернету отсутсвует';
+    document.querySelector('.Articles__table').appendChild(newNode);
+  });
+  try{
+    let rjson = await respId.json();
+  }
+  catch{
+    setTimeout(function(){document.querySelector('#spinner').className = 'spinnerNo';}, 500);
+    return;
+  }
   if(respId.ok){
     try{
       let userId = rjson[0].id;
