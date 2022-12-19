@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<title> Web программирование</title>
+	<link href="css/style.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Java, Csharp">
+	<script src="js/loader.js"></script>
+</head>
+<script src="js/FScroll.js"></script>
+<body >
+	<header class="title">
+		<nav class="nav" id = "navId">
+			<a class="nav__link" href="index.html">Что такое Java?</a>
+			<a class="nav__link" href="Charp.html">Что такое C#?</a>
+			<a class="nav__link" href="JavaVsCsharp.html">C# против Java: "Hello world"</a>
+			<a class="nav__link" href="myTodoList.html">Todo List</a>
+      <a class="nav__link" href="UserArticles.html">Статьи Пользователей</a>
+		</nav>
+		<h1 >
+		Сайт разработчика
+		</h1>
+	</header>
+	<script src="js/page.js"></script>
+	<button onclick="topFunction()" id="Btn" title="Go to top">
+		<p ><img class="a__content" src="images/picture5.png" alt="Искусственный интеллект"></p>
+	</button>
+    <main id = "Articles">
+      <div class="Articles__input">
+        <form class="Articles__input_form" name="Articles__input_form" id="Articles__input_form">
+          <span class="form__name"> Введите имя Пользователя, статьи которого хотите найти </span>
+          <input id="form__input" class="form__inputClass" type="text" name="form__input" placeholder="Иван Иванов">
+          <button class="form__button" type="submit">Найти статьи</button>
+        </form>
+      </div>
+			<div class="spinner_after">
+			<div id ="spinner" class="spinnerNo"></div>
+			</div>
+      <div class="Articles__table"></div>
+      <template id="Articles__templateContent">
+				<div class="content">
+        	<h4 class="content__header"></h4>
+        	<p class="content__body"></p>
+				</div>
+      </template>
+       <template id ="Articles__templateErrorOne">
+				<div class="ErrorOne__content">
+        <p class="ErrorOne__content_body"></p>
+				</div>
+       </template>
+      <template id ="Articles__templateErrorTwo">
+				<div class="ErrorTwo__content">
+      		<p class="ErrorTwo__content_body">request isn`t complete </p>
+				</div>
+      </template>
+      <script src="test.js"></script>
+    </main>
+	<footer class="finality">
+		<h4 class="finality__contactInfo">Контактная информация:</h4>
+			<ul class="finality__data">
+				<li>Беззубцева Анастасия Андреевна</li>
+				<li><a class="finality__data_link" href="tel: 89198741592">8-919-874-15-92</li>
+				<li><a class="finality__data_link"  href="mailto:adkam02@mail.ru ">adkam02@mail.ru</a></li>
+			</ul>
+			<div id="answer"></div>
+	</footer>
+</body>
+</html>
